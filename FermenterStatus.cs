@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace FermenterStatus
 {
-    [BepInPlugin("com.github.johndowson.fermenterstatus", "FermenterStatus", "1.0.0")]
+    [BepInPlugin("com.github.johndowson.fermenterstatus", "FermenterStatus", "1.0.1")]
     public class FermenterStatus : BaseUnityPlugin
     {
         private static readonly Harmony harmony = new(typeof(FermenterStatus).GetCustomAttributes(typeof(BepInPlugin), false)
