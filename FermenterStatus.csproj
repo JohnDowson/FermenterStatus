@@ -39,7 +39,6 @@
     <Compile Include="FermenterExt.cs" />
     <Compile Include="FermenterStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Util.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- Copy mod to BepInEx "plugins" directory -->
@@ -241,6 +240,10 @@
     <ProjectReference Include="..\BuildTool\BuildTool.csproj">
       <Project>{2080bd2a-a6f1-4a0e-bd81-ca58dc667417}</Project>
       <Name>BuildTool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DebugUtils\DebugUtils.csproj">
+      <Project>{7138778a-a48f-4dfa-9ed3-36192284a5da}</Project>
+      <Name>DebugUtils</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

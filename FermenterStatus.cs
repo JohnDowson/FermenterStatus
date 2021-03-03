@@ -20,7 +20,7 @@ namespace FermenterStatus
 
         private void OnDestroy()
         {
-            harmony.UnpatchAll();
+            harmony.UnpatchSelf();
         }
 
         [HarmonyPatch(typeof(Fermenter), "GetHoverText")]
